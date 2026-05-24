@@ -186,6 +186,14 @@ def test_amount_above_50_5():
     ) == 51
 
 #def test_amount_above_50_6():
+def test_amount_above_50_6():
+    assert compute_food_delivery(
+        amount_orders=51,
+        isPeakHours=False,
+        isMembership=False,
+        delivery_distance=10,
+    ) == 51
+
 
 #def test_amount_above_50_7():
 
