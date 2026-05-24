@@ -142,12 +142,40 @@ def test_amount_between_10_50_7():
 #----------------------------------------
 
 #def test_amount_above_50():
+def test_amount_above_50():
+    assert compute_food_delivery(
+        amount_orders=51,
+        isPeakHours=True,
+        isMembership=True,
+        delivery_distance=10,
+    ) == 51
 
 #def test_amount_above_50_2():
+def test_amount_above_50_2():
+    assert compute_food_delivery(
+        amount_orders=51,
+        isPeakHours=True,
+        isMembership=False,
+        delivery_distance=10,
+    ) == 51
 
 #def test_amount_above_50_3():
+def test_amount_above_50_3():
+    assert compute_food_delivery(
+        amount_orders=51,
+        isPeakHours=True,
+        isMembership=True,
+        delivery_distance=21,
+    ) == -1
 
 #def test_amount_above_50_4():
+def test_amount_above_50_4():
+    assert compute_food_delivery(
+        amount_orders=51,
+        isPeakHours=True,
+        isMembership=False,
+        delivery_distance=21,
+    ) == -1
 
 #def test_amount_above_50_5():
 
